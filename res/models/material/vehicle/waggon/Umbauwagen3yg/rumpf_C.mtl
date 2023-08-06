@@ -1,20 +1,16 @@
 function data()
 return {
 	params = {
-		color_blend = {
-			albedoScale = math.pow(1.37, 0.8),
+		albedo_scale = {
+			albedoScale = { 1, 1, 1, },
 		},
 		dirt_rust = {
-			dirtColor = {
-				55/255, 40/255, 29/255,
-			},
+			dirtColor = { 55/255, 40/255, 29/255, },
 			dirtOpacity = 10/100,
-			dirtScale = 100/12.5,
-			rustColor = {
-				62/255, 44/255, 36/255,
-			},
+			dirtScale = 10,
+			rustColor = { 62/255, 44/255, 36/255, },
 			rustOpacity = 50/100,
-			rustScale = 100/34.77,
+			rustScale = 10,
 		},
 		fade_out_range = {
 			fadeOutEndDist = 20000,
@@ -26,6 +22,13 @@ return {
 		},
 		map_cblend_dirt_rust = {
 			fileName = "models/vehicle/waggon/Umbauwagen3yg/rumpf_B_cblend_dirt_rust.dds",
+			magFilter = "LINEAR",
+			minFilter = "LINEAR_MIPMAP_LINEAR",
+			mipmapAlphaScale = 0,
+			redGreen = true,
+			type = "TWOD",
+			wrapS = "CLAMP_TO_EDGE",
+			wrapT = "CLAMP_TO_EDGE",
 			type = "TWOD",
 		},
 		map_dirt = {
@@ -38,7 +41,7 @@ return {
             redGreen = true,
 		},
 		map_metal_gloss_ao = {
-			fileName = "models/vehicle/waggon/Umbauwagen3yg/rumpf_C_metal_gloss_ao.dds",
+			fileName = "models/vehicle/waggon/Umbauwagen3yg/rumpf_B2_metal_gloss_ao.dds",
 			type = "TWOD",
 		},
 		map_normal = {
